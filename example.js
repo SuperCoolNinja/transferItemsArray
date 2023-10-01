@@ -1,4 +1,4 @@
-// transfer all items : 
+// transfer all items :
 function transferAllItems(source, target) {
   // set all data from source to target :
   target.push([...source]);
@@ -7,8 +7,7 @@ function transferAllItems(source, target) {
   source.length = 0;
 }
 
-
-// transfer one item : 
+// transfer one item :
 function transferItem(source, target, v) {
   const sourceIndex = source.indexOf(v);
 
@@ -18,11 +17,9 @@ function transferItem(source, target, v) {
   }
 }
 
-
 // transfer mutiple values :
 function transferItems(source, target, values) {
   const valuesToTransfer = [];
-
 
   for (const value of values) {
     const index = source.indexOf(value);
@@ -35,7 +32,6 @@ function transferItems(source, target, values) {
 
   target.push(...valuesToTransfer);
 }
-
 
 const source = ["foo", "bar", "prop"];
 const target = [];
